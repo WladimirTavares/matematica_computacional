@@ -15,6 +15,7 @@ class MATRIX
 
  public:
     int n,m;
+    bool falha;
     MATRIX(int x, int y, LD v=0.0);
     LD Gauss();
 
@@ -51,8 +52,13 @@ LD MATRIX::Gauss()
 {
     LD det=1.0;
 
-    for(int i=0;i<n;i++){
+    falha = false;
 
+    for(int i=0;i<n;i++){
+        if( a[i][i] < EPS ){
+            falha = true;
+            return -1;
+        }
         det*=a[i][i];
 
         for(int j=i+1; j<n; j++){
