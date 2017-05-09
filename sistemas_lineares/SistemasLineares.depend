@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1493920024 source:d:\ufc\pagina\matcomp2017.1\codigos\sistemas lineares\sistemaslineares\main.cpp
+	"Matriz.h"
+	<iostream>
+
+1493920077 d:\ufc\pagina\matcomp2017.1\codigos\sistemas lineares\sistemaslineares\matriz.h
+	<math.h>
+	<iostream>
+	<iomanip>
+	<vector>
+
+1493919896 source:d:\ufc\pagina\matcomp2017.1\codigos\sistemas lineares\sistemaslineares\matriz.cpp
+	<math.h>
+	<iostream>
+	<iomanip>
+	<vector>
+	"Matriz.h"
+
